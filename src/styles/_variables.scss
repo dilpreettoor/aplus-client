@@ -1,0 +1,24 @@
+//Width//
+$mobile-max-width: 767px;
+$tablet-width: 768px;
+$desktop-width:1280px;
+
+//Font sizes//
+$base-font-size: 16px;
+
+//Colors//
+$primary-color: #8B7355;    // Earthy Brown
+$secondary-color: #6B8EAE;  // Slate Blue
+$accent-color: #F5C25A;     // Golden Yellow
+$neutral-color: #D4D4D4;    // Soft Gray
+$highlight-color: #4B6D41;  // Deep Green
+$backgroundDark: #232940; //Dark blue
+$backgroundLight: #F7F8F9; //Cultured
+$outlineColor: #AFAFAF; // Light gray
+
+//Call to Actions//
+$cta-bg-color: $accent-color;
+$cta-text-color: $primary-color;
+$cta-hover-bg-color: $primary-color;
+$cta-hover-text-color: $accent-color;
+
