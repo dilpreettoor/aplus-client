@@ -1,0 +1,7 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product__card-item--image {
+  width: 8rem;
+}/*# sourceMappingURL=ProductList.css.map */

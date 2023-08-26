@@ -1,0 +1,9 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+        &__card-item {
+            &--image {
+                width: 8rem;
+            }
+    }
+}
