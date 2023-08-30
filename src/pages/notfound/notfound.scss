@@ -1,0 +1,10 @@
+.notfound {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        width: 15rem;
+        margin: auto;
+    }
+}
