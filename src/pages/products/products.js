@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import ProductList from '../../components/ProductList/ProductList';
-import { ApiUtils } from '../../utils';
+import React, { useState, useEffect } from "react";
+import ProductList from "../../components/ProductList/ProductList";
+import { ApiUtils } from "../../utils";
 
 const Products = () => {
   const [ProductData, setProductData] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  const [showCartModal, setShowCartModal] = useState(false);
 
   useEffect(() => {
-ApiUtils.getProductList()
+    ApiUtils.getProductList()
       .then((res) => {
         setProductData(res.data);
       })
@@ -19,8 +21,19 @@ ApiUtils.getProductList()
     setProductData(newData);
   };
 
+  const toggleCartModal = () => {
+    setShowCartModal(!showCartModal);
+  };
+
   return (
-    <ProductList ProductData={ProductData} setProductData={updateProductData} />
+    <ProductList
+      ProductData={ProductData}
+      setProductData={updateProductData}
+      cartItems={cartItems}
+      setCartItems={setCartItems}
+      showCartModal={showCartModal}
+      toggleCartModal={toggleCartModal}
+    />
   );
 };
 
