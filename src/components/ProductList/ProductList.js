@@ -1,22 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import redT from "../../assets/Images/redtshirt.jpg";
+import CartModal from "../../modals/cart/cartmodal";
+import { useCart } from '../../context/CartContext';
 import "./ProductList.css";
 
-const ProductList = ({ ProductData, setProductData }) => {
+const ProductList = ({
+  ProductData,
+}) => {
   const navigate = useNavigate();
-  const [cartItems, setCartItems] = useState([]);
+
+  const { cartItems, setCartItems, showCartModal, toggleCartModal } = useCart();
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
+      setCartItems(JSON.parse(storedCart));
+    }
+  }, [setCartItems]);
 
   const addToCart = (product) => {
-    setCartItems([...cartItems, product]);
-    console.log(cartItems);
+    // Check if the product is already in the cart
+  const existingItemIndex = cartItems.findIndex(
+    (item) => item.productID === product.productID
+  );
+
+  if (existingItemIndex !== -1) {
+    // If the product is already in the cart, update its quantity
+    const updatedCartItems = [...cartItems];
+    updatedCartItems[existingItemIndex].quantity++;
+    setCartItems(updatedCartItems);
+  } else {
+    // If the product is not in the cart, add it as a new item
+    const newItem = { ...product, quantity: 1 };
+    setCartItems([...cartItems, newItem]);
+  }
+
+   //Store in localStorage for guest access
+   localStorage.setItem("cart", JSON.stringify(cartItems));
+      // Show the cart modal
+    if (cartItems.length === 0) {
+      toggleCartModal();
+    }
   };
 
   return (
     <section className="product">
       {ProductData.map((product) => (
-        <div className="product__card">
+        <div className="product__card" key={product.id}>
           <div className="product__card-inner">
             <div className="product__card-inner--front">
               <div className="product__card-item">
@@ -33,12 +65,16 @@ const ProductList = ({ ProductData, setProductData }) => {
             </div>
 
             <div className="product__card-inner--back">
-                <button onClick={ ()=> addToCart(product)}>Add to Cart</button>
-                <h2>Product Description</h2>
+              <button onClick={() => addToCart(product)}>Add to Cart</button>
+              <h2>Product Description</h2>
             </div>
           </div>
         </div>
       ))}
+
+      {showCartModal && (
+        <CartModal cartItems={cartItems} setCartItems={setCartItems} />
+      )}
     </section>
   );
 };

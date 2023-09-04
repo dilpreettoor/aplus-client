@@ -1,8 +1,11 @@
 import React from "react";
 import Homer from "../../assets/Images/homer.png";
+import { useCart } from "../../context/CartContext";
+import CartModal from "../../modals/cart/cartmodal";
 import './notfound.css';
 
 const NotFound = () => {
+  const { cartItems, setCartItems, showCartModal } = useCart();
   return (
     <div className="notfound">
       <h2 className="notfound__heading">
@@ -20,6 +23,9 @@ const NotFound = () => {
         src={Homer}
         alt="homer"
       />
+      {showCartModal && (
+        <CartModal cartItems={cartItems} setCartItems={setCartItems} />
+      )}
     </div>
   );
 }
