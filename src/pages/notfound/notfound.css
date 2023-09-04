@@ -1,0 +1,9 @@
+.notfound {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.notfound__image {
+  width: 15rem;
+  margin: auto;
+}/*# sourceMappingURL=notfound.css.map */

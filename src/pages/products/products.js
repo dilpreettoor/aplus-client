@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import ProductList from '../../components/ProductList/ProductList';
+import { ApiUtils } from '../../utils';
 
 const Products = () => {
   const [ProductData, setProductData] = useState([]);
 
   useEffect(() => {
-    const apiUrl = "http://localhost:8083/products";
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        setProductData(data);
+ApiUtils.getProductList()
+      .then((res) => {
+        setProductData(res.data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
