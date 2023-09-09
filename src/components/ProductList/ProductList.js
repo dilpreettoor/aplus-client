@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import CartModal from "../../modals/cart/cartmodal";
 import { useCart } from '../../context/CartContext';
 import "./ProductList.css";

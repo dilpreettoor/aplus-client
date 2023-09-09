@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import './ordertracker.css';
 import { useParams } from "react-router-dom";
 function Ordertracker() {
