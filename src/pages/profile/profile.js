@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './profile.css';
 import axios from "axios";
 
 const SERVER_URL = "https://aplus-server-e829eb76cb64.herokuapp.com";
