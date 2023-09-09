@@ -1,25 +1,117 @@
 .cart-modal-overlay {
-    position: fixed;
-    top: 2rem;
-    right: 2rem; 
-    width: 25rem; 
-    background-color: rgba(229, 213, 213, 0.5); 
-    z-index: 999; 
-    display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start; 
-    padding: 0.2rem; 
-  }
-  
-  .cart-modal {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0.2 rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-    max-height: 300px; /* Adjust the maximum height as needed */
-    overflow-y: auto; /* Add vertical scroll if content exceeds max height */
-    width: 100%; /* Make the modal content full width */
-  }
-  
-  /* Additional styling can be applied as per your design requirements */
-  
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 25rem;
+  background-color: rgba(229, 213, 213, 0.95); /* Increase opacity for better visibility */
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0.2rem;
+  border-radius: 10px; 
+}
+
+
+.cart-modal {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  max-height: 400px; 
+  overflow-y: auto;
+  width: 100%; 
+}
+
+
+.cart-modal__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.cart-modal__list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.cart-modal__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.cart-modal__item-name {
+  flex: 1;
+  font-weight: bold;
+}
+
+
+.cart-modal__item-price {
+  font-size: 1rem;
+  color: #007bff; 
+}
+
+
+.cart-modal__item-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cart-modal__item-button--remove {
+  background: #dc3545;
+}
+
+
+.cart-modal__item-quantity {
+  font-size: 1rem;
+}
+
+
+.cart-modal__empty {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.cart-modal__total {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+.cart-modal__checkout-button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+}
+
+
+.cart-modal__item-button:hover,
+.cart-modal__item-button--remove:hover,
+.cart-modal__checkout-button:hover {
+  background: #0056b3; 
+}

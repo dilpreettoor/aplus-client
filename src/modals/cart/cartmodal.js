@@ -36,7 +36,7 @@ function CartModal({ cartItems }) {
                 <button className="cart-modal__item-button">+</button>
                 <span className="cart-modal__item-quantity">quantity: {item.quantity}</span>
                 <button className="cart-modal__item-button">-</button>
-                <button className="cart-modal__item-button cart-modal__item-button--remove">Remove</button>
+                <button className="cart-modal__item-button cart-modal__item-button--remove"> - </button>
               </li>
             ))
           ) : (
