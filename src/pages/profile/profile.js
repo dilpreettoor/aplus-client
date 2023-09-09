@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import './profile.css';
 import axios from "axios";
+import needauth from "../../assets/Images/meme_sad_frog.png"
 
 const SERVER_URL = "https://aplus-server-e829eb76cb64.herokuapp.com";
 
@@ -59,6 +61,7 @@ const ProfilePage = () => {
         <>
           <p>
             <strong>This page requires authentication.</strong>
+            <img className="needauth-img" src={needauth}></img>
           </p>
 
         </>
