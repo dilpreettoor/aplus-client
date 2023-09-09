@@ -52,9 +52,7 @@ const ProfilePage = () => {
               alt={`${profileData.username} avatar`}
             />
 
-            <div className="profile-page__logout-wrapper">
-              <LogoutButton />
-            </div>
+            
           </>
         )
       ) : (
@@ -62,7 +60,7 @@ const ProfilePage = () => {
           <p>
             <strong>This page requires authentication.</strong>
           </p>
-          <LoginButton />
+
         </>
       )}
     </section>
