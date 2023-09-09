@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import redT from "../../assets/Images/redtshirt.jpg";
 import CartModal from "../../modals/cart/cartmodal";
 import { useCart } from '../../context/CartContext';
 import "./ProductList.css";
@@ -9,7 +7,7 @@ import "./ProductList.css";
 const ProductList = ({
   ProductData,
 }) => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const { cartItems, setCartItems, showCartModal, toggleCartModal } = useCart();
 

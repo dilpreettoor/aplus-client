@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 function Ordertracker() {
 
     const { id } = useParams();
-    const [ OrderStatus, setOrderStatus ] = useState ({});
+    //const [ OrderStatus, setOrderStatus ] = useState ({});
     return (
         <div className="ordertracker">
             <h1 className="ordertracker__heading">

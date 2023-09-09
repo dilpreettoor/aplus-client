@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import CartModal from "../../modals/cart/cartmodal";
 import { useCart } from "../../context/CartContext";
 import "./about.css";
