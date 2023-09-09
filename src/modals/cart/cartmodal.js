@@ -17,8 +17,9 @@ function CartModal({ cartItems }) {
   };
 
   const checkout = (cartItems) => {
-    console.log("save cart items to orders page")
-    navigate('/checkout');
+    const totalPrice = calculateTotalPrice();
+    console.log(totalPrice);
+    navigate('/checkout', { state: { cartItems, totalPrice}});
   }
   
 
