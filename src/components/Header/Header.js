@@ -73,12 +73,13 @@ function Header() {
           </div>
           <div className="headerNav__profile-wrapper">
             <div className="headerNav__profile">
+            <Link to="/profile">
               <img
-                to="/profile"
                 className="headerNav__profile--image"
                 src={profile}
                 alt="default profile"
               />
+              </Link>
             </div>
 
             <div
