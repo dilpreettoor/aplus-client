@@ -3,7 +3,7 @@ import axios from 'axios';
 import LoginButton from '../../components/button/LoginButton';
 import LogoutButton from '../../components/button/LogoutButton';
 
-const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+const SERVER_URL = 'https://aplus-server-e829eb76cb64.herokuapp.com';
 
 const ProfilePage = () => {
 
