@@ -61,7 +61,7 @@ const ProfilePage = () => {
         <>
           <p>
             <strong>This page requires authentication.</strong>
-            <img alt="failed-image" className="needauth-img" src={needauth}></img>
+            <img alt="failed-image" className="needauth" src={needauth}></img>
           </p>
 
         </>
