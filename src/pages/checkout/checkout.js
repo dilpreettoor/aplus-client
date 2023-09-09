@@ -1,12 +1,20 @@
 import CartModal from "../../modals/cart/cartmodal";
 import { useCart } from "../../context/CartContext";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 import "./checkout.css";
 
 const Checkout = () => {
   const { cartItems, setCartItems, showCartModal } = useCart();
   const location = useLocation();
   const totalPrice = location.state.totalPrice;
+  const navigate = useNavigate();
+  const orderId = uuidv4();
+
+  const handleContinue = () => {
+    // Pass the order ID as a query parameter to the payment page
+    navigate(`/payment?orderId=${orderId}`);
+  };
 
   return (
     <section className="checkout">
@@ -22,7 +30,7 @@ const Checkout = () => {
       </div>
 
       <div className="checkout__CTA">
-          <button className="checkout__CTA--btn">Continue</button>
+          <button className="checkout__CTA--btn" onClick={handleContinue}>Continue</button>
       </div>
 
       {showCartModal && (
