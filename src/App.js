@@ -21,8 +21,8 @@ function App() {
       <Route path="/track/:id" element={<Ordertracker/>} />
       <Route path="/aboutus" element={<AboutUs/>} />
       <Route path="/checkout" element={<Checkout/>} />
-      <Route path="profile" element={<ProfilePage />} />
-      <Route path="auth-fail" element={<NotFound />} />
+      <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/auth-fail" element={<NotFound />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer/>

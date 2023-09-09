@@ -66,7 +66,7 @@ function Header() {
                         <Link to ="/track"><h2>Order status</h2></Link>
                     </div>
                     <div className="headerNav__profile-wrapper">
-                        <div className="headerNav__profile">
+                        <div to ="/profile" className="headerNav__profile">
                             <img
                                 className="headerNav__profile--image"
                                 src={profile}
