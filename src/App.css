@@ -21,6 +21,10 @@ a {
   display: flex;
 }
 
+a:visited {
+  color: inherit;
+}
+
 body {
   font-family: "Gaegu Regular", sans-serif;
   background-color: #F7F8F9;
