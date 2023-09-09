@@ -5,15 +5,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
+}
+.checkout__title {
+  font-size: 1.5rem;
 }
 .checkout__contact-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+}
+.checkout__contact-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.checkout input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 .checkout__CTA {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 .checkout__CTA--btn {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -22,11 +39,11 @@
   border-radius: 6px;
   border: 1px solid #dcdcdc;
   font-family: "Gaegu Regular", sans-serif;
-  font-size: 2em;
+  font-size: 1.5rem;
   display: inline-block;
   cursor: pointer;
   color: #666666;
-  padding: 6px 24px;
+  padding: 0.5rem 1.5rem;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
