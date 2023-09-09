@@ -8,6 +8,7 @@ import NotFound from "./pages/notfound/notfound";
 import AboutUs from "./pages/aboutus/about";
 import { CartProvider } from "./context/CartContext";
 import './App.css';
+import Checkout from "./pages/checkout/checkout";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/track/" element={<Ordertracker/>} />
       <Route path="/track/:id" element={<Ordertracker/>} />
       <Route path="/aboutus" element={<AboutUs/>} />
+      <Route path="/checkout" element={<Checkout/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer/>

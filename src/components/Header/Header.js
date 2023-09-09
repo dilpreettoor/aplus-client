@@ -26,13 +26,6 @@ function Header() {
         };
     }, []);
 
-    useEffect(() => {
-      const storedCart = localStorage.getItem("cart");
-      if (storedCart) {
-        setCartItems(JSON.parse(storedCart));
-      }
-    }, [setCartItems]);
-
     const toggleGif = () => {
         setGifPlaying(!isGifPlaying);
         console.log(isGifPlaying);

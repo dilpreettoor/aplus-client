@@ -47,8 +47,8 @@ const ProductList = ({
 
   return (
     <section className="product">
-      {ProductData.map((product) => (
-        <div className="product__card" key={product.id}>
+      {ProductData.map((product, id) => (
+        <div className="product__card" key={id}>
           <div className="product__card-inner">
             <div className="product__card-inner--front">
               <div className="product__card-item">

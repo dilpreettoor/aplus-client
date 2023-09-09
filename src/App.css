@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Gaegu Regular";
+  src: url(../src/fonts/Gaegu-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gaegu Bold";
+  src: url(../src/fonts/Gaegu-Bold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
 /* global styling */
 * {
   box-sizing: border-box;
@@ -10,7 +22,7 @@ a {
 }
 
 body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Gaegu Regular", sans-serif;
   background-color: #F7F8F9;
 }
 

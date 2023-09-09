@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8083/",
+    baseURL: "https://aplus-server-e829eb76cb64.herokuapp.com/",
     headers: {
         "Content-Type": "application/json"
     }
