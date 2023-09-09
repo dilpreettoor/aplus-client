@@ -12,7 +12,7 @@ import { useCart } from "../../context/CartContext";
 function Header() {
     const [isGifPlaying, setGifPlaying] = useState(false);
     const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-    const { showCartModal, toggleCartModal, setCartItems } = useCart(); // Use the CartContext hook
+    const { showCartModal, toggleCartModal } = useCart(); // Use the CartContext hook
 
     useEffect(() => {
         const handleResize = () => {
