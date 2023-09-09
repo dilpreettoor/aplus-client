@@ -50,12 +50,18 @@ const ProfilePage = () => {
               src={profileData.avatar_url}
               alt={`${profileData.username} avatar`}
             />
+
+<div className="profile-page__logout-wrapper">
+              
+              <LogoutButton />
+            </div>
           </>
         )
       ) : (
         <p>
           <strong>This page requires authentication.</strong>
         </p>
+        <LoginButton />
       )}
     </section>
   );
