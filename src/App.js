@@ -6,6 +6,7 @@ import Ordertracker from "./pages/ordertracker/ordertracker";
 import NotFound from "./pages/notfound/notfound";
 import AboutUs from "./pages/aboutus/about";
 import { CartProvider } from "./context/CartContext";
+import ProfilePage from "./pages/profile/profile";
 import './App.css';
 import Checkout from "./pages/checkout/checkout";
 
@@ -20,6 +21,8 @@ function App() {
       <Route path="/track/:id" element={<Ordertracker/>} />
       <Route path="/aboutus" element={<AboutUs/>} />
       <Route path="/checkout" element={<Checkout/>} />
+      <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/auth-fail" element={<NotFound />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer/>
