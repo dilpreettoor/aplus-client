@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const SERVER_URL = 'https://aplus-server-e829eb76cb64.herokuapp.com';
+const SERVER_URL = "https://aplus-server-e829eb76cb64.herokuapp.com";
 
 const ProfilePage = () => {
   const [isAuthenticating, setIsAuthenticating] = useState(true);
@@ -10,10 +10,11 @@ const ProfilePage = () => {
 
   useEffect(() => {
     axios
-      .get(`${SERVER_URL}/auth/profile`, { withCredentials: true })  
+      .get(`${SERVER_URL}/auth/profile`, { withCredentials: true })
       .then((res) => {
         // Check if the user is authenticated
-        if (res.status === 200) {  // Check the response status
+        if (res.status === 200) {
+          // Check the response status
           setIsLoggedIn(true);
           setProfileData(res.data);
         }
@@ -23,14 +24,14 @@ const ProfilePage = () => {
         if (err.response.status === 401) {
           setIsLoggedIn(false);
         } else {
-          console.error('Error authenticating:', err);
+          console.error("Error authenticating:", err);
         }
         setIsAuthenticating(false);
       });
   }, []);
 
   const formatDate = (date) => {
-    return new Date(date).toLocaleDateString('en-US');
+    return new Date(date).toLocaleDateString("en-US");
   };
 
   if (isAuthenticating) {
@@ -50,12 +51,17 @@ const ProfilePage = () => {
               src={profileData.avatar_url}
               alt={`${profileData.username} avatar`}
             />
+
+            
           </>
         )
       ) : (
-        <p>
-          <strong>This page requires authentication.</strong>
-        </p>
+        <>
+          <p>
+            <strong>This page requires authentication.</strong>
+          </p>
+
+        </>
       )}
     </section>
   );

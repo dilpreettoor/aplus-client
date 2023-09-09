@@ -62,8 +62,9 @@ const ProductList = ({
             </div>
 
             <div className="product__card-inner--back">
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
               <h2>Product Description</h2>
+
+              <button className="my-custom-button" onClick={() => addToCart(product)}>Add to Cart</button>
             </div>
           </div>
         </div>
