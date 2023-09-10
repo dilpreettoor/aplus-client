@@ -78,25 +78,29 @@ Start the server
 ```
 
 
-## Usage
+## Screenshots
 
-To get started with Aplus, follow these simple steps:
+![Product Page](/images/product-page.png)
 
-    1. Browse the product categories to find what you need.
-    2. Click on a product to view details.
-    3. Add items to your cart and proceed to checkout.
-    4. Provide shipping and payment information.
-    5. Review your order and confirm the purchase.
+## Contact
 
-Happy shopping with Aplus!
+If you have any questions, feedback, or suggestions, feel free to contact us:
 
-## Contributing
+- Email: [toordilpreet01@gmail.com](mailto:toordilpreet01@email.com)
+- GitHub: [dilpreettoor](https://github.com/dilpreettoor)
+## Technologies Used
 
-We welcome contributions from the developer community. To contribute to Aplus, please follow these guidelines:
+Aplus is built using the following technologies and libraries:
 
-- Fork the project repository.
-- Create a new branch for your feature or bug fix.
-- Make your changes and test thoroughly.
-- Submit a pull request with a clear description of your changes.
+- React.js
+- Node.js
+- Express.js
+- Postgres
 
-Thank you for helping us improve Aplus!
+## Future Enhancements
+
+We have plans to enhance Aplus with the following features in the future:
+
+- User reviews and ratings
+- Mobile app version
+- Integration with payment gateways
