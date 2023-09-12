@@ -1,0 +1,32 @@
+
+@use '../src/styles/fonts' as *;
+@use '../src/styles/variables' as *;
+
+/* global styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+a{
+  text-decoration: none;
+  display: flex;
+
+}
+
+a:visited {
+  color: inherit; 
+}
+
+body{
+  font-family: 'Gaegu Regular', sans-serif;
+  background-color: $backgroundLight;
+}
+
+hr{
+  background-color: $outlineColor;
+  border: none;
+  height: 1px;
+}

@@ -1,0 +1,16 @@
+.footer {
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+}
+.footer__container {
+  width: 50%;
+}
+.footer__social--image {
+  width: 2rem;
+  height: 2rem;
+}
+.footer__social-wrapper {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=Footer.css.map */

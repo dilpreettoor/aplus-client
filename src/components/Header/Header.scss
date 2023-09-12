@@ -1,0 +1,55 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.headerNav {
+    padding: 1rem;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__hamburger-menu {
+        &--image {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          @include desktop {
+            display: none;
+          }
+    }
+
+    &__desktop-menu {
+        display: none;
+
+        @include desktop {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+        }
+    }
+
+    &__profile-wrapper {
+        display: flex;
+    }
+
+    &__profile {
+        &--image {
+            width: 2rem;
+            height: 2rem;
+          }
+    }
+
+    &__cart {
+        &--image {
+            width: 2rem;
+            height: 2rem;
+          }
+    }
+
+    &__logo {
+        &--image {
+            height: 3rem;
+            margin-right: -4rem;
+          }
+    }
+}

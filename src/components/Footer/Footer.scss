@@ -1,0 +1,16 @@
+.footer {
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+  &__container {
+    width: 50%;
+  }
+  &__social--image {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__social-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

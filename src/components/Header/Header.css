@@ -1,0 +1,41 @@
+.headerNav {
+  padding: 1rem;
+}
+.headerNav__container {
+  display: flex;
+  justify-content: space-between;
+}
+.headerNav__hamburger-menu--image {
+  width: 2rem;
+  height: 2rem;
+}
+@media (min-width: 1280px) {
+  .headerNav__hamburger-menu {
+    display: none;
+  }
+}
+.headerNav__desktop-menu {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .headerNav__desktop-menu {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+}
+.headerNav__profile-wrapper {
+  display: flex;
+}
+.headerNav__profile--image {
+  width: 2rem;
+  height: 2rem;
+}
+.headerNav__cart--image {
+  width: 2rem;
+  height: 2rem;
+}
+.headerNav__logo--image {
+  height: 3rem;
+  margin-right: -4rem;
+}/*# sourceMappingURL=Header.css.map */
