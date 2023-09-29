@@ -6,6 +6,7 @@ import Ordertracker from "./pages/ordertracker/ordertracker";
 import NotFound from "./pages/notfound/notfound";
 import AboutUs from "./pages/aboutus/about";
 import { CartProvider } from "./context/CartContext";
+import { ThemeProvider } from "./context/ThemeContext";
 import ProfilePage from "./pages/profile/profile";
 import './App.css';
 import Checkout from "./pages/checkout/checkout";
@@ -13,6 +14,7 @@ import Checkout from "./pages/checkout/checkout";
 function App() {
   return (
     <BrowserRouter>
+    <ThemeProvider>
     <CartProvider>
     <Header/>
     <Routes>
@@ -27,6 +29,7 @@ function App() {
     </Routes>
     <Footer/>
     </CartProvider>
+    </ThemeProvider>
     </BrowserRouter>
   );
 }
