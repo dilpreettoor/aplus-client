@@ -12,11 +12,11 @@
 .product__card {
   background-color: transparent;
   width: 15rem;
-  height: 15rem;
+  height: 20rem;
   perspective: 1000px;
 }
 .product__card-item--image {
-  margin-top: 1rem;
+  margin-top: 0rem;
   width: 8rem;
 }
 .product__card-inner {
