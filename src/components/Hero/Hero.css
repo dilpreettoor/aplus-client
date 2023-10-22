@@ -1,0 +1,77 @@
+.hero {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center;
+}
+.hero .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero .hero-content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.hero .hero-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+.hero .hero-content .featured-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.hero .hero-content .featured-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.hero .hero-content .featured-item .product-description {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hero .hero-content .featured-item .product-price {
+  font-size: 20px;
+  color: #f3725d;
+}
+.hero .hero-content .newsletter-signup h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.hero .hero-content .newsletter-signup p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+.hero .hero-content .newsletter-signup .newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-content .newsletter-signup .newsletter-form input[type=email] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 250px;
+}
+.hero .hero-content .newsletter-signup .newsletter-form button[type=submit] {
+  background-color: #f3725d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hero .hero-content .newsletter-signup .newsletter-form button[type=submit]:hover {
+  background-color: #d85e4d;
+}/*# sourceMappingURL=Hero.css.map */
