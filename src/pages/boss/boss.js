@@ -2,13 +2,9 @@ import "./boss.css";
 
 const Boss = () => {
 
-    const adminEmail = process.env.ADMIN_EMAIL;
-    const googleClientId = process.env.GOOGLE_CLIENT_ID;
-    console.log(adminEmail);
-
   return (
     <section className="boss">
-      
+      <h1>Im the boss</h1>
     </section>
   );
 };
